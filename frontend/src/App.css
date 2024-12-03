@@ -1,0 +1,17 @@
+/* Ensure the entire screen has a black background */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure full height */
+    width: 100%; /* Ensure full width */
+}
+
+/* Target the root container for React */
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: rgb(228, 178, 178); /* Fallback black for #root */
+}
